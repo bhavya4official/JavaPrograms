@@ -1,0 +1,17 @@
+//initialize the object through a reference variable
+class Student{  
+ int id;  
+ String name;  
+}  
+class TestStudent2{  
+ public static void main(String args[]){  
+  Student s1=new Student();  
+  s1.id=7;  
+  s1.name="Honey";  
+  System.out.println(s1.id+" "+s1.name);//printing members with a white space  
+ }  
+} 
+
+/*
+Initializing an object means storing data into the object. 
+*/
