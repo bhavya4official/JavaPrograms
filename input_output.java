@@ -1,4 +1,4 @@
-import java.util.scanner; // Import the Scanner class
+import java.util.Scanner; // Import the Scanner class
 class Demo{
   public static void main(System []arg){
     Scanner input = new Scanner(Sysetm.in);  // Create a Scanner object
