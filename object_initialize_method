@@ -1,0 +1,24 @@
+import java.io.*;
+class Student{
+int id;
+String name;
+void insertData(int i,String n){
+ id = i;
+ name = n;
+ }
+void displayData(){
+  System.out.println("ID: " + i + "Name: " + name);
+ }
+}
+
+class TestStudent{
+public static void main(string arg[]){
+  //Creating object
+  Student s1 = new Student();
+  Student s2 = new Student();
+  s1.insertData(07,"Honey");  //initializing the value to these objects by invoking the insertRecord method
+  s2.insertData(15,"Golu");
+  s1.displayData();
+  s2.displayData();
+  }
+}  
