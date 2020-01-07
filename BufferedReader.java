@@ -1,5 +1,5 @@
 //BufferedReader class is used to read the text from a character-based input stream (Fast performance)
-import java.util.*;
+import java.io.*;
 public class BRDemo{
   public static void main(String arg[]){
     FileReader fr = new FileReader("D:\\test.text"); //reading the data from the text file testout.txt
