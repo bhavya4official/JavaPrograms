@@ -1,18 +1,53 @@
-//The ArrayList class is a resizable array
-import java.util.ArrayList;  // import the ArrayList class
-
-class Demo{
-  public static void main(String arg[]){
-    ArrayList<String> cars = new ArrayList<String>();  // Create an ArrayList object
-    cars.add("BMW");
-    cars.add("Ford");
-    cars.add("Mercedes");
-    System.out.pirntln(cars);
-    System.out.println(cars.size());
-    System.out.println(cars.get(0));
-    cars.set(1,"Audi");
-    cars.remove(2);
-    cars.clear();
+package java;
+import java.util.*;
+public class java 
+{
+    List<String> list=new ArrayList<String>();
+    Scanner sc=new Scanner(System.in);
+    public void enter()
+    {
+      System.out.println("Enter Student Name");
+      String name=sc.next();
+      list.add(name);
     }
+    
+    public void display()
+    {
+        for(String str:list)
+        {
+            System.out.println("Name : "+str);
+        }
+        
+    }
+     public static void main(String as[])
+     {
+         java mm=new java();
+         char ch='y';
+         while(ch=='y' || ch=='Y')
+         {
+             System.out.println("Enter 1 for Add Student Name");
+             System.out.println("Enter 2 for Display Student Name");
+             System.out.println("Enter 3 for Exit");
+             int a=mm.sc.nextInt();
+             switch(a)
+             {
+                 case 1:
+                     mm.enter();
+                     break;
+                 case 2:
+                     mm.display();
+                     break;
+                 case 3:
+                     System.exit(0);
+                     break;
+                 default:
+                     System.out.println("Invlid Choice...");
+                     break;
+                
+             }
+              System.out.println("Do you want to enter More names Y/N");
+               ch=mm.sc.next().charAt(0);
+         }
+                 
+     }
 }
-  
